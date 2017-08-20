@@ -16,7 +16,16 @@ export default class Layout extends React.Component {
   changeTitle(title) {
     this.setState({title});
   }
+
+  getServerData(){
+    const url = 'http://localhost:3001'
+    fetch(url)
+    .then(function(response) {
+    console.log(response);
+})
+  }
   render() {
+    this.getServerData();
     const movie = {
       title: "The Rock",
       dureation: "94",

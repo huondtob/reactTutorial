@@ -3,8 +3,6 @@ import React from 'react';
 import MovieForm from './Body/MovieForm';
 import InputForm from './Body/InputForm';
 
-
-;
 export default class Body extends React.Component {
   render() {
     return (
